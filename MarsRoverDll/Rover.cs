@@ -164,7 +164,7 @@ namespace MarsRoverDll
             int tempCoordinate;
             if (int.TryParse(Param[0], out tempCoordinate))
             {
-                if (tempCoordinate > this._plateau.GetXCoordinate())
+                if ((tempCoordinate > this._plateau.GetXCoordinate()) || (tempCoordinate < 0))
                     throw new ArgumentException(MarsRoverMessages.ER_ROVER_GREATER_THAN_PLATEU_LIMIT);
                 this.Coordinate_X = tempCoordinate;
             }                
@@ -172,7 +172,7 @@ namespace MarsRoverDll
                 throw new ArgumentException(MarsRoverMessages.ER_PLATEAU_BAD_PARAMETERS_IN_CONSTRUCTOR);
             if (int.TryParse(Param[1], out tempCoordinate))
             {
-                if (tempCoordinate > this._plateau.GetYCoordinate())
+                if ((tempCoordinate > this._plateau.GetYCoordinate()) || (tempCoordinate < 0))
                     throw new ArgumentException(MarsRoverMessages.ER_ROVER_GREATER_THAN_PLATEU_LIMIT);
                 this.Coordinate_Y = tempCoordinate;
             }                
