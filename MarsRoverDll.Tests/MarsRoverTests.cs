@@ -17,8 +17,8 @@ namespace MarsRoverDll.Tests
         [TestMethod]
         public void Rover_Olustur_Verilen_Koordinatlara_Aktar_12N_Ve_Verilen_Komutlari_Uygula_LMLMLMLMM()
         {
-            Rover rover         = new Rover(_plateau);
-            rover.NewPositionRover("8 2 N");
+            Rover rover = new Rover(_plateau);
+            rover.NewPositionRover("1 2 N");
             rover.CommandsOnRover("LMLMLMLMM");
 
             var currentResult   = $"{rover.Coordinate_X} {rover.Coordinate_Y} {rover.Direction.ToString()}";
@@ -30,7 +30,7 @@ namespace MarsRoverDll.Tests
         [TestMethod]
         public void Rover_Olustur_Verilen_Koordinatlara_Aktar_33E_Ve_Verilen_Komutlari_Uygula_MMRMMRMRRM()
         {
-            Rover rover         = new Rover(_plateau);
+            Rover rover = new Rover(_plateau);
             rover.NewPositionRover("3 3 E");
             rover.CommandsOnRover("MMRMMRMRRM");
 
