@@ -12,7 +12,6 @@ namespace MarsRoverDll
         {
             if (String.IsNullOrEmpty(param))
                 throw new ArgumentNullException(MarsRoverMessages.ER_NULL_PARAMETER);
-
             string[] parseString = param.Split(' ');
             return parseString;
         }

@@ -155,6 +155,10 @@ namespace MarsRoverDll
             }
         }
 
+        /// <summary>
+        /// Gönderilen Yeni Pozisyon Bilgilerini Kontrol Ediyor ve Bunu İlgili Alanlara Set Ediyor.
+        /// </summary>
+        /// <param name="Param"></param>
         private void Check_NewPositionRover(string[] Param)
         {
             int tempCoordinate;

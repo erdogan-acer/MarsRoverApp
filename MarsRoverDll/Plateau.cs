@@ -24,7 +24,6 @@ namespace MarsRoverDll
                 throw ;
             }
         }
-
         public int GetXCoordinate()
         {
             return this._Coordinate_X;
